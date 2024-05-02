@@ -1,0 +1,157 @@
+.cabin-rentals {
+  background-image: url(../img/cabin_rental_background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  margin: auto;
+  padding: 90px 24px;
+  position: static;
+  width: auto;
+  text-align: center;
+  color: var(--classic-white);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.cabin-rentals__title {
+  padding-bottom: 40px;
+  font-size: 34px;
+  font-family: "Circular Std Bold", serif;
+}
+
+.cabin-rentals__cabin-block {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 30px;
+  max-width: 1200px;
+  padding-bottom: 40px;
+}
+
+.cabin-rentals__cabin {
+  aspect-ratio: 2/1;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin:auto;
+}
+
+.cabin-rentals__cabin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--obscure-background-color);
+  z-index: 1;
+}
+
+.first-cabin {
+  background-image: url("../img/first_cabin.webp");
+}
+
+.second-cabin {
+  background-image: url("../img/second_cabin.webp");
+}
+
+.third-cabin {
+  background-image: url("../img/third_cabin.webp");
+}
+
+.fourth-cabin {
+  background-image: url("../img/fourth_cabin.webp");
+}
+
+.cabin-rentals__text {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cabin-rentals__price {
+  font-size: 34px;
+  font-family: "Circular Std Bold", serif;
+  padding-bottom: 30px;
+}
+
+.cabin-rentals__name {
+  font-size: 22px;
+  font-family: "Circular Std Bold", serif;
+  padding-bottom: 15px;
+}
+
+.cabin-rentals__description {
+  color: var(--description-text-color);
+  padding-bottom: 35px;
+}
+
+.cabin-rentals__button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 46px;
+  background-color: var(--button-color);
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: var(--classic-white);
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cabin-rentals__button-link:hover,
+.cabin-rentals__button-link:active{
+  background-color: var(--classic-white);
+  color: var(--font-standard-color);
+  transition: color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.cabin-rentals__general-button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 154px;
+  height: 46px;
+  background-color: none;
+  border: solid var(--classic-white) 1px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--classic-white);
+}
+
+.cabin-rentals__general-button-link:hover,
+.cabin-rentals__general-button-link:active {
+  background-color: var(--classic-white);
+  border: none;
+  color: var(--font-standard-color);
+  transition: color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+@media (min-width:767px) {
+  .cabin-rentals__cabin-block {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}

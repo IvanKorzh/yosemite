@@ -1,0 +1,74 @@
+<section class="contact">
+  <div class="contact__container container">
+    <div class="contact__content">
+      <h2 class="contact__title">Contact Us</h2>
+      <p class="contact__description">
+        If you have any questions, feel free to get in touch with us at any
+        time.
+      </p>
+      <div class="contact__address">
+        <div class="contact__details">
+          <h3 class="contact__subtitle">Write Us</h3>
+          <div class="contact__email">
+            <p><a href="mailto:yosemite@email.com">yosemite@email.com</a></p>
+          </div>
+        </div>
+        <div class="contact__details">
+          <h3 class="contact__subtitle">Call Us</h3>
+          <div class="contact__phone">
+            <p>
+              <a href="tel:+1123456789">+1 (123) 45 67 89</a><br />
+              <a href="tel:+1123456700">+1 (123) 45 67 00</a>
+            </p>
+          </div>
+        </div>
+        <div class="contact__details">
+          <h3 class="contact__subtitle">Visit Us</h3>
+          <div class="contact__location">
+            <p>
+              Yosemite Mariposa County,<br />
+              Ca, USA
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form
+      class="contact__form"
+      action="https://formspree.io/f/xayreapg"
+      method="POST"
+    >
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name*"
+        class="contact__input"
+        required
+      />
+      <input
+        type="text"
+        name="phone-number"
+        id="phone-number"
+        placeholder="Phone number*"
+        class="contact__input"
+        required
+      />
+      <input type="submit" value="Send" class="contact__submit" />
+    </form>
+  </div>
+  <div class="fullscreen-overlay"></div>
+  <div class="modal-window__wrapper">
+    <div class="modal-window">
+      <button class="modal-window__close-btn"></button>
+      <object
+        class="tick-icon"
+        type="image/svg+xml"
+        data="img/tick.svg"
+      ></object>
+      <h2 class="modal-window__title">Thank you!</h2>
+      <p class="modal-window__message">We will contact you shortly</p>
+      <button class="modal-window__button">Ok</button>
+    </div>
+  </div>
+</section>
